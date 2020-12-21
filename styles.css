@@ -27,12 +27,18 @@ div.wrapper {
 
 @media (max-width: 700px) {
   div.wrapper {
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
   }
 
   div.container {
     padding-left: 10px;
+  }
+
+  img {
+    width: 180px;
+    height: 200px;
   }
 }
 
@@ -53,19 +59,28 @@ img {
   width: 100%;
   border-radius: 3px;
   margin-bottom: 2em;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  /* box-shadow: 10px 10px 5px #aaaaaa;
   -webkit-filter: blur(3px);
   filter: blur(3px);
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; */
 }
 
-img:hover {
+/* img:hover {
   -webkit-filter: blur(0);
   filter: blur(0);
-}
+} */
 
 @media (max-width: 600px) {
+  div.wrapper-image {
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
   div.wrapper-image {
     column-count: 2;
   }
